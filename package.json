@@ -2,12 +2,12 @@
   "name": "pact-js-provider-test",
   "version": "0.0.1",
   "description": "A test case for providers in js",
-  "main": "index.js",
+  "main": "index_es6.js",
   "scripts": {
     "start": "./node_modules/.bin/babel-node index.js",
     "stop": "pkill -f providerTest",
     "test": "NODE_ENV=test mocha --reporter list --recursive --compilers js:babel-core/register",
-    "pact": "./node_modules/.bin/babel-node test/service_consumers/pact_helper.js",
+    "pact": "./node_modules/.bin/babel-node pacts.js",
     "pactVerify": "./node_modules/.bin/babel-node index.js"
   },
   "keywords": [
@@ -26,7 +26,6 @@
     "child-process-promise": "^1.1.0",
     "express": "^4.13.3",
     "morgan": "^1.6.1",
-    "pact-js-provider": "1.0.3",
     "q": "^1.4.1",
     "request": "^2.67.0"
   },
