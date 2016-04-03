@@ -20,7 +20,6 @@ function switchMary(turnOn, done) {
   }
 
   request(post_options, (error, req, resp) => {
-    console.log('callback on request')
     done()
   })
 }
@@ -28,13 +27,10 @@ function switchMary(turnOn, done) {
 provider_states_for('Animal Service', 'Zoo App', './pacts/zoo_app-animal_service.json', 'http://localhost:5000', (done) => {
   providerState('there is an alligator named Mary', (done) => {
     setUp( (done) => {
-      console.log('setup111111')
       switchMary(true, done)
     })
 
-    it( (done) => {
-      done()
-    })
+    it( () => {})
 
     tearDown( (done) => {
       done()
@@ -46,13 +42,10 @@ provider_states_for('Animal Service', 'Zoo App', './pacts/zoo_app-animal_service
     let options = {"pactUrl":'./pacts/zoo_app-animal_service.json', "baseUrl": 'http://localhost:5000'}
 
     setUp((done) => {
-      console.log('setup22222')
       switchMary(false, done)
     })
 
-    it( (done) => {
-      done()
-    })
+    it( () => {})
 
     tearDown( (done) => {
       done()
