@@ -24,7 +24,7 @@
     "babel-plugin-transform-class-properties": "^6.3.13",
     "body-parser": "^1.14.2",
     "child-process-promise": "^1.1.0", 
-    "pact-js-provider": "^1.1.1",
+    "pact-js-provider": "^1.1.2",
     "express": "^4.13.3",
     "morgan": "^1.6.1",
     "q": "^1.4.1",
