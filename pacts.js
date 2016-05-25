@@ -1,4 +1,4 @@
-import {runPact, runPacts} from 'pact-js-provider'
+import {runPact, runPacts} from 'pact-js'
 
 //runPact('./test/service_consumers/pact_helper')
 
